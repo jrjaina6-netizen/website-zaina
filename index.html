@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio Zaina - belajar HTML, CSS, dan JavaScript dengan desain modern dan interaktif."
+    />
+    <title>Portofolio Zaina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="beranda" class="site-header">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <span class="eyebrow">Portofolio Web Developer</span>
+          <h1>Halo, saya Zaina.</h1>
+          <p class="hero-text">
+            Saya membuat website yang bersih, interaktif, dan menarik untuk
+            menunjukkan kemampuan HTML, CSS, dan JavaScript saya.
+          </p>
+          <div class="hero-actions">
+            <a href="#tentang" class="button button-primary">Tentang Saya</a>
+            <a href="#kontak" class="button button-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="project1.jpg.jpg" alt="Contoh proyek Zaina" />
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#video">Video</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+
+    <main class="site-main">
+      <section id="tentang" class="panel panel-highlight">
+        <div class="panel-content">
+          <h2>Tentang Saya</h2>
+          <p>
+            Halo, nama saya Zaina. Saya sedang belajar HTML, CSS, dan JavaScript
+            untuk menjadi web developer modern. Saya senang membuat tampilan
+            yang bersih, pengalaman pengguna yang nyaman, dan animasi halus.
+          </p>
+          <ul class="skills-list">
+            <li>Desain responsif dan modern</li>
+            <li>Interaksi JavaScript yang mudah digunakan</li>
+            <li>Pengalaman pengguna dengan fokus pada detail</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="galeri" class="panel">
+        <div class="panel-content">
+          <h2>Galeri Foto</h2>
+          <p class="panel-subtitle">
+            Klik gambar untuk melihat versi yang lebih besar.
+          </p>
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img
+                src="project1.jpg.jpg"
+                alt="Proyek 1"
+                data-large="project1.jpg.jpg"
+              />
+              <figcaption>Proyek 1</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="project6.jpg.jpg"
+                alt="Proyek 2"
+                data-large="project6.jpg.jpg"
+              />
+              <figcaption>Proyek 2</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="project3.jpg.jpg"
+                alt="Proyek 3"
+                data-large="project3.jpg.jpg"
+              />
+              <figcaption>Proyek 3</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" class="panel">
+        <div class="panel-content">
+          <h2>Video Favorit</h2>
+          <div class="embed-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/lW9ep22YmlM?s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="lokasi" class="panel">
+        <div class="panel-content">
+          <h2>Lokasi Saya</h2>
+          <div class="embed-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11508.664390510034!2d107.84877230000001!3d-7.012747249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1781414003774!5m2!1sid!2sid"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak" class="panel">
+        <div class="panel-content">
+          <h2>Hubungi Saya</h2>
+          <form id="contactForm" class="contact-form">
+            <label>
+              Nama Anda
+              <input type="text" name="nama" placeholder="Nama Anda" required />
+            </label>
+            <label>
+              Email Anda
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Anda"
+                required
+              />
+            </label>
+            <label>
+              Pesan
+              <textarea
+                name="pesan"
+                rows="5"
+                placeholder="Tulis pesan..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="button button-primary">
+              Kirim Pesan
+            </button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Portfolio Zaina. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <div id="imageModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-card">
+        <button
+          type="button"
+          class="modal-close"
+          data-close="true"
+          aria-label="Tutup galeri"
+        >
+          ×
+        </button>
+        <img src="" alt="Gambar diperbesar" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
